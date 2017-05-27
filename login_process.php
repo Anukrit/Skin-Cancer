@@ -1,3 +1,7 @@
+<?php
+//must appear BEFORE the <html> tag
+session_start();
+include_once('config.php');	
 
 if( isset($_POST["username"])&& isset($_POST["password"]) )
 {
@@ -30,7 +34,7 @@ if( isset($_POST["username"])&& isset($_POST["password"]) )
 	}
 }
 if (isset($_SESSION['valid_user']))
-{                 
+{
   header("Location:home.php");  
 }
 else
@@ -46,3 +50,12 @@ else
     // user has not tried to log in yet or has logged out
     echo "<b>You are not logged in</b><br>";
   }
+
+}
+
+?>
+
+
+
+
+
