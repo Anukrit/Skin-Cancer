@@ -35,10 +35,11 @@ if(isset($_POST['fname'], $_POST['lname'], $_POST['uname'], $_POST['pw'],$_POST[
 	else
 		$gender='F';
     $state = $_POST['state'];
+    $birthdate = $_POST['birthdate'];
     //make the database connection
     $conn  = db_connect();
     //create an insert query    
-    $sql = "insert into user_details (first_name,last_name,email,username,password,gender) VALUES ('$fname', '$lname','$email','$uname', '$password','$gender')";
+    $sql = "insert into user_details (first_name,last_name,email,username,password,gender,birthdate) VALUES ('$fname', '$lname','$email','$uname', '$password','$gender','$birthdate')";
     //execute the query
     if($conn -> query($sql))
     {
