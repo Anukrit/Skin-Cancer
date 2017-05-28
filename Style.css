@@ -1,6 +1,18 @@
-.navbar-default .navbar-nav>li>a:hover {
-    background: darkgray !important;
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a {
     color: white !important;
+}
+
+.blue-gradient {
+	background: linear-gradient(to right,#2e3192 0,#0066b3 100%) !important;
+    color: white;
+}
+
+.blue-gradient ul li a {
+    color: white;
+}
+
+.color-white{
+	color: white !important
 }
 
 .content{
@@ -29,6 +41,51 @@ padding:5px;
 input[type="button"]:hover,input[type="submit"]:hover{
 background:darkgray;
 border:1px solid lightgray;
-color:white;
+color:black !important;
 padding:7px;
+}
+
+.navbar-default .navbar-nav>.active>a{
+	color:black!important;
+}
+
+.logo{
+    width: 112px;
+    margin-right: 10px;
+}    
+
+.color-red{
+	color:red;
+}
+
+.project-sponsors{
+	margin: 0 auto;
+    text-align: center;
+}    
+.project-sponsors img{
+	text-align:center;
+	padding: 20px;
+	height: 200px;
+}
+
+.content{
+	border:none;
+}
+
+.margin-auto{
+	margin: 0 auto;
+}
+
+.margin-bottom-10{
+	margin-bottom:10px;
+}
+
+form {
+	font-size:18px;
+}
+.white-space-normal{
+	white-space: normal;
+}
+.clear-both{
+	clear:both;
 }
