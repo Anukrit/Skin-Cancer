@@ -1,21 +1,33 @@
 <?php
 //define constants for connection info
-define("MYSQLUSER","root");
-define("MYSQLPASS","");
-define("HOSTNAME","localhost:3306");
-define("MYSQLDB","bluecard");
+define("MYSQLUSER","jcubitgr_ict");
+define("MYSQLPASS","123zxc");
+define("HOSTNAME","localhost");
+define("MYSQLDB","jcubitgr_suncare");
 
-//make connection to database
-function db_connect()
-{
-	try{
-	$connString="mysql:host=".HOSTNAME.";dbname=".MYSQLDB;
-	$conn = new PDO($connString,MYSQLUSER,MYSQLPASS);
-	}
-	catch (PDOException $e) {
-  		die( $e->getMessage() );
-	}
+// make connection to database
+// function db_connect()
+// {
+// 	try{
+// 	$connString="mysql:host=".HOSTNAME.";dbname=".MYSQLDB;
+// 	$conn = new PDO($connString,MYSQLUSER,MYSQLPASS);
+// 	}
+// 	catch (PDOException $e) {
+//   		die( $e->getMessage() );
+// 	}
+//
+// 	return $conn;
+// }
+// $conn  = db_connect();
 
-	return $conn;
-} 
+$conn = new mysqli(HOSTNAME, MYSQLUSER, MYSQLPASS, MYSQLDB);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+error_reporting(E_ERROR | E_WARNING | E_PARSE);
+
+$admin_email = 'anukrit.gaur@my.jcu.edu.au';
+
 ?>

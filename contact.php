@@ -1,4 +1,7 @@
-
+<?php
+session_start();
+include_once('config.php');
+?>
 <html>
     <head>
         <title>
@@ -6,21 +9,21 @@
         </title>
     </head>
 <body>
-<?php 
+<?php
 include_once('menu.php');
 ?>
 <div align="center" style="margin:auto" class="content">
 	<h1>Contact us</h1>
 
 	<div style="display:inline-block; text-align: left;">
-		<p><b>e-mail:</b> jcuskincancerresearchgroup@gmail.com</p>
-		<p><b>phone:</b> 44331749</p>
+    <p><img src="images/email-phone-simone.png" width="300" /></p>
+		<p><img src="images/email-phone-jcu-skincare.png" width="400" /></p>
 		<p><h2>Project Director:</h2>Dr Simone Harrison <br>
 		JCU Skin Cancer Research Unit <br>
 		College of Public Health, Medical and Veterinary Sciences
 		</p>
-		<p><b>e-mail:</b> Simone.harrison@jcu.edu.au</p>
-		<p><b>Mobile:</b> 0423 489 083</p>
+		<p><img src="images/simone.jpg" width="300" /></p>
+
 	</div>
 </div>
 <!--This code is used for changing the active item on the menu-->
